@@ -76,6 +76,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AddToolStripMenuItem,
@@ -146,6 +147,7 @@
             this.BooksList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.BooksList.Location = new System.Drawing.Point(33, 73);
             this.BooksList.Name = "BooksList";
+            this.BooksList.ReadOnly = true;
             this.BooksList.RowHeadersWidth = 82;
             this.BooksList.RowTemplate.Height = 33;
             this.BooksList.Size = new System.Drawing.Size(1112, 475);
