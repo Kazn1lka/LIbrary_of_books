@@ -84,35 +84,35 @@
             this.ExitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1593, 48);
+            this.menuStrip1.Size = new System.Drawing.Size(1728, 40);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // AddToolStripMenuItem
             // 
             this.AddToolStripMenuItem.Name = "AddToolStripMenuItem";
-            this.AddToolStripMenuItem.Size = new System.Drawing.Size(140, 40);
+            this.AddToolStripMenuItem.Size = new System.Drawing.Size(140, 36);
             this.AddToolStripMenuItem.Text = "Добавить";
             this.AddToolStripMenuItem.Click += new System.EventHandler(this.AddToolStripMenuItem_Click);
             // 
             // ChangeToolStripMenuItem
             // 
             this.ChangeToolStripMenuItem.Name = "ChangeToolStripMenuItem";
-            this.ChangeToolStripMenuItem.Size = new System.Drawing.Size(143, 40);
+            this.ChangeToolStripMenuItem.Size = new System.Drawing.Size(143, 36);
             this.ChangeToolStripMenuItem.Text = "Изменить";
             this.ChangeToolStripMenuItem.Click += new System.EventHandler(this.ChangeToolStripMenuItem_Click);
             // 
             // DeleteToolStripMenuItem
             // 
             this.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem";
-            this.DeleteToolStripMenuItem.Size = new System.Drawing.Size(122, 38);
+            this.DeleteToolStripMenuItem.Size = new System.Drawing.Size(122, 36);
             this.DeleteToolStripMenuItem.Text = "Удалить";
             this.DeleteToolStripMenuItem.Click += new System.EventHandler(this.DeleteToolStripMenuItem_Click);
             // 
             // ExitToolStripMenuItem
             // 
             this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
-            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(103, 38);
+            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(103, 36);
             this.ExitToolStripMenuItem.Text = "Выйти";
             this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
@@ -146,10 +146,9 @@
             this.BooksList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.BooksList.Location = new System.Drawing.Point(33, 73);
             this.BooksList.Name = "BooksList";
-            this.BooksList.ReadOnly = true;
             this.BooksList.RowHeadersWidth = 82;
             this.BooksList.RowTemplate.Height = 33;
-            this.BooksList.Size = new System.Drawing.Size(1112, 471);
+            this.BooksList.Size = new System.Drawing.Size(1112, 475);
             this.BooksList.TabIndex = 5;
             this.BooksList.SelectionChanged += new System.EventHandler(this.BooksList_SelectionChanged);
             // 
@@ -225,7 +224,7 @@
             // 
             // ShowTitle
             // 
-            this.ShowTitle.Location = new System.Drawing.Point(1383, 234);
+            this.ShowTitle.Location = new System.Drawing.Point(1383, 240);
             this.ShowTitle.Name = "ShowTitle";
             this.ShowTitle.Size = new System.Drawing.Size(100, 31);
             this.ShowTitle.TabIndex = 14;
@@ -256,7 +255,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1593, 720);
+            this.ClientSize = new System.Drawing.Size(1728, 724);
             this.Controls.Add(this.btnSaveChanges);
             this.Controls.Add(this.btnAddBook);
             this.Controls.Add(this.ShowTitle);

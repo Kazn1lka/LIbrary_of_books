@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace LIbrary_of_books
 {
@@ -14,21 +15,11 @@ namespace LIbrary_of_books
             string[] authors = File.ReadAllLines("files/Authors.txt");
             string[] genres = File.ReadAllLines("files/Genres.txt");
             string[] books = File.ReadAllLines("files/Books.txt");
-            comboBoxAuthors.Items.AddRange(authors);
-            comboBoxGenres.Items.AddRange(genres);
-            List<string> cleanAuthors = new List<string>();
-            foreach (string line in authors)
-            {
-                string name = line.Split('.')[1].Trim();
-                cleanAuthors.Add(name);
-            }
 
-            List<string> cleanGenres = new List<string>();
-            foreach (string line in genres)
-            {
-                string genre = line.Split('.')[1].Trim();
-                cleanGenres.Add(genre);
-            }
+            string[] cleanAuthors = authors.Select(l => l.Split('.')[1].Trim()).ToArray();
+            string[] cleanGenres = genres.Select(l => l.Split('.')[1].Trim()).ToArray();
+            comboBoxAuthors.Items.AddRange(cleanAuthors);
+            comboBoxGenres.Items.AddRange(cleanGenres);
             foreach (string line in books)
             {
                 string[] parts = line.Split(',', '.');
